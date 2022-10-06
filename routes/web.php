@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
+//use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 /*   VERIFICAR ORDEN DE LAS RUTAS  */                                                              
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('posts');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('pagina1');
 
-Route::get('/post', [App\Http\Controllers\HomeController::class, 'post'])->name('post');
+Route::get('/post', [App\Http\Controllers\HomeController::class, 'post'])->name('pagina2');
 
 Auth::routes();
 

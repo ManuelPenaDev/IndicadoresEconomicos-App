@@ -1,4 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.layout')
+
+@section('title','Pagina2')
+
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -151,9 +156,6 @@
             </div>
         </div>
     </section>
-   
-  <!-- agrega aquí el footer -->
-
-  @endsection
-  </body>
-</html>
+    </body>
+</html>   
+@endsection

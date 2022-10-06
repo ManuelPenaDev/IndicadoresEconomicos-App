@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth');
+        $this->middleware('auth');
     }
 
     /**
@@ -21,13 +21,18 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    /*
+        Funcion index retorna vista posts que es la que tenemos como página inicial.
+        La función poost retorna la vista post que es una página con contenido dentro de todo el sitio web.
+    */
     public function index()
     {
+        //return view('home');
         return view('posts');
     }
-
     public function post()
     {
+        //return view('home');
         return view('post');
     }
 }

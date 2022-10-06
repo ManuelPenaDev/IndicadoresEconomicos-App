@@ -1,4 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.layout')
+    
+@section('title','Proyecto clase')
+
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -108,10 +113,4 @@
       </div>
     </div>
   </section>
-
-
-
-  @endsection
-</header>
-</body>
-</html>
+@endsection
